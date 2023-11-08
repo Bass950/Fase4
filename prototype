@@ -1,0 +1,135 @@
+using System;
+
+namespace ProyectoGrado
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //presentado por: ANDRES FELIPE GARCES ESCOBAR, DEIBYS ALEJANDRO CABEZA MENDOZA, YESICA PAOLA RUIZ GONZALEZ
+            //Grupo:202016907_1 21_36 37
+            //programa:ingenieria en sistemas
+            //codigo fuente: ANDRES FELIPE GARCES ESCOBAR, DEIBYS ALEJANDRO CABEZA MENDOZA, YESICA PAOLA RUIZ GONZALEZ
+
+            double menu = 0;
+            string nombre;
+            string apellido;
+            int identificacion = 0;
+            //int resultado = 0;
+            int patologia = 0;
+            
+
+            Console.Write("Ingrese nombre del paciente: ");
+            nombre = string.Format(Console.ReadLine());
+            Console.Write("Ingrese apellido del paciente: ");
+            apellido = string.Format(Console.ReadLine());
+            Console.Write("Ingrese numero de identificacion del paciente: ");
+            identificacion = int.Parse(Console.ReadLine());
+
+           
+
+            while (menu != 10)
+            {
+                Console.WriteLine("******** Seleccionar sintomas que padece el paciente ********");
+                Console.WriteLine("1. Tos con o sin mucosidad, dolor en el pecho, Cansancio, dolor de cabeza leve, dolores corporales, dolor de garganta. ");
+                Console.WriteLine("2. Estornudos, congestion, noqueo, dolor de garganta, tos, goteo de mucosidad en la garganta, lagrimeo, fiebre.");
+                Console.WriteLine("3. Dolor de oido, fiebre, nerviosismo o irritabilidad, frotarse o jalarse una oreja, dificultad para dormir. ");
+                Console.WriteLine("4. Fiebre, tos, dolores corporales, dolor de garganta, moqueo o congetion, dolor de cabeza, escalofrios, fatiga,vomitos y diarrea en ocaciones.");
+                Console.WriteLine("5. Moqueo, congestion nasal, dolor o presion en la cara, dolor de cabeza, goteo de mucosidad en la garganta, dolor de garganta, tos, mal aliento.");
+                Console.WriteLine("6. Enrojecimiento de la piel, dolor y sensacion de calor cuando se toca el lugar afectado de la piel, inflamacion en el area afectada.");
+                Console.WriteLine("7  Tos, moqueo, ronquear, conjuntivitis");
+                Console.WriteLine("8. Ardor al orinar, orinar con frecuencia, sangre en la orina, retorcijon en la ingle, fiebre ");
+                Console.WriteLine("9. Seleccionar otros sintomas");
+                Console.WriteLine("10. Salir");
+
+                patologia = int.Parse(Console.ReadLine());
+
+                if (patologia == 1 )
+                {
+                    Console.Write("El paciente tiene bronquitis ");
+
+                    Console.Write("Causas: Lo que generalmente causa la bronquitis aguda es un virus. A veces, también la puede ser causada por bacterias.Pero incluso en esos casos, los antibióticos NO están aconsejados y no ayudarán a hacerlo sentir mejor. ");
+                    Console.Write("Tratamiento: Por lo general, la bronquitis aguda mejora por sí sola, sin antibióticos. Los antibióticos no lo ayudarán a mejorar si usted tiene bronquitis aguda. Los antibióticos no lo ayudarán si no los necesita y los efectos secundarios incluso podrían hacerle daño.Los efectos secundarios pueden variar desde reacciones leves, como sarpullido, hasta problemas de salud más graves.");
+                    Console.Write("Que e debe hacer para mejorar: Descansar lo suficiente, Tomar líquido abundante, Usar un humidificador limpio o un vaporizador de aire frío, Utilizar una solución salina nasal en aerosol o gotas para aliviar la congestión nasal, En niños pequeños, usar una pera de goma succionadora para sacar la mucosidad.");
+                    Console.Write("Como prevenirla: Limpiarse las manos. Ponerse las vacunas recomendadas, como la vacuna contra la influenza, No fumar y evitar el humo de segunda mano, Cubrirse la nariz y la boca al toser o estornudar.");
+                }
+                else if (patologia == 2)
+                {
+                    Console.Write("El paciente tiene: Resfriado común");
+                    Console.Write("Causas: Más de 200 virus pueden causar un resfriado, pero los rinovirus son el tipo más común. Los virus que causan los resfriados se pueden transmitir de persona a persona a través del aire y del contacto personal cercano. ");
+                    Console.Write("Tratamiento: El médico puede determinar si usted tiene un resfriado al preguntarle sobre sus síntomas y hacerle un examen físico. Puede que el médico también necesite ordenar pruebas de laboratorio. ");
+                    Console.Write("Que e debe hacer para mejorar: Descansar lo suficiente, Tomar líquido abundante, Usar un humidificador limpio o un vaporizador de aire frío. ");
+                    Console.Write("Como prevenirla: Cubrirse la nariz y la boca al toser o estornudar, Evitar tocarse los ojos, la nariz y la boca con las manos sin lavar, No fumar y evitar el humo de segunda mano. ");
+                }
+                else if (patologia == 3)
+                {
+                    Console.Write("El paciente tiene: Infección de oído ");
+                    Console.Write("Causas: Las bacterias, como Streptococcus pneumoniae y Haemophilus influenzae (no tipificable) son las dos bacterias más comunes que causan infecciones del oído medio, los virus.");
+                    Console.Write("Tratamiento: Conducta expectante: El médico de su hijo podría sugerir estar a la expectativa y esperar 2-3 días para ver si el niño necesita antibióticos. Esto le da tiempo al sistema inmunitario para combatir la infección. ");
+                    Console.Write("Que e debe hacer para mejorar: Descansar, beber agua u otros liquidos, tomar medicamentos de venta sin receta para aliviar el dolor o la fiebre ");
+                    Console.Write("Como prevenirla: Amamantar exclusivamente hasta que su bebé tenga 6 meses de vida y seguir amamantando durante al menos 12 meses, No fumar y evitar la exposición al humo de segunda mano, Secarse bien los oídos después de la natación. ");
+                }
+                else if (patologia == 4)
+                {
+                    Console.Write("El paciente tiene: Influenza (gripe) ");
+                    Console.Write("Causas: La influenza es causada por un virus que se propaga de persona a persona. Cada año provoca epidemias estacionales.");
+                    Console.Write("Tratamiento: podría recetar medicamentos antivirales para la influenza. Estos medicamentos pueden hacer que se mejore más rápido y también pueden prevenir las complicaciones graves. ");
+                    Console.Write("Que e debe hacer para mejorar: Tomar los medicamentos recomendados para su pronta recuperacion. ");
+                    Console.Write("Como prevenirla: Trate de evitar el contacto con personas enfermas Si está enfermo, limite lo más que pueda el contacto con otras personas para evitar contagiarlas. ");
+                }
+                else if (patologia == 5)
+                {
+                    Console.Write("El paciente tiene: Sinusitis (infección de los senos paranasales");
+                    Console.Write("Causas: ocurren cuando se acumula líquido en los senos paranasales (cavidades en la cara que están llenas de aire). Esta acumulación de líquido permite que se multipliquen los microbios. ");
+                    Console.Write("Tratamiento: En muchos casos de sinusitis, no se necesitan antibióticos. Por lo general, la mayoría de las sinusitis mejoran por sí solas, sin antibióticos. Los antibióticos no lo ayudarán si no los necesita y los efectos secundarios incluso podrían hacerle daño. Los efectos secundarios pueden variar desde reacciones leves, como sarpullido, hasta problemas de salud más graves.");
+                    Console.Write("Que e debe hacer para mejorar: Ponerse una compresa tibia sobre la nariz y la frente para ayudar a aliviar la presión en los senos paranasales, usar un descongestionante o una solución salina nasal en aerosol,  Inhalar vapor de un recipiente con agua caliente o de la ducha. ");
+                    Console.Write("Como prevenirla: No fumar y evitar el humo de segunda mano, usar un humidificador limpio para humedecer el aire en su casa, ponerse las vacunas recomendadas, como la vacuna contra la influenza y la vacuna antineumocócica. ");
+                }
+                else if (patologia == 6)
+                {
+                    Console.Write("El paciente tiene: Infecciones de la piel ");
+                    Console.Write("Causas: Por lo general, en la piel de una persona viven tipos diferentes de bacterias. La celulitis o un absceso se pueden producir si hay un corte o una ruptura en la piel que permitan el ingreso de bacterias y causen una infección. ");
+                    Console.Write("Tratamiento: Si tiene un absceso en la piel, el médico tal vez necesite drenar el pus del absceso. Algunas veces se necesitan antibióticos para los abscesos después de que se haya drenado el pus. ");
+                    Console.Write("Que e debe hacer para mejorar: Tómelos exactamente según las indicaciones de su médico, no comparta los antibióticos con otras personas, no los guarde para usarlos en el futuro. Consulte al farmacéutico sobre cómo desechar de forma segura los medicamentos que sobren. ");
+                    Console.Write("Como prevenirla: Limpiese las manos, lave los cortes con agua y jabon ");
+                }
+                else if (patologia == 7)
+                {
+                    Console.Write("El paciente tiene: Dolor de garganta ");
+                    Console.Write("Causas: Virus, como los que causan los resfriados o la influenza, bacterias estreptocócicas del grupo A, que causan la infección de garganta por estreptococos (llamada también faringitis estreptocócica), Alergias, tabaquismo o exposición al humo de segunda mano ");
+                    Console.Write("Tratamiento: se necesitan antibióticos para tratarla y prevenir la fiebre reumática y otras complicaciones. El médico no puede determinar si alguien tiene una infección de garganta por estreptococos con solo mirar la garganta. ");
+                    Console.Write("Que e debe hacer para mejorar: Chupar trocitos de hielo, paletas heladas, usar un humidificador limpio o un vaporizador de aire frío, hacer gárgaras con agua salada. ");
+                    Console.Write("Como prevenirla: Evitar el contacto cercano con personas que tengan dolor de garganta, un resfriado u otra infección de las vías respiratorias superiores, no fumar y evitar la exposición al humo de segunda mano. ");
+                }
+                else if (patologia == 8)
+                {
+                    Console.Write("El paciente tiene: Infección urinaria ");
+                    Console.Write("Causas: ocurren cuando entran bacterias a la uretra, generalmente de la piel o el recto, e infectan las vías urinarias. ");
+                    Console.Write("Tratamiento: se tratan con antibióticos. Sin embargo, cada vez que usted toma antibióticos, estos pueden causar efectos secundarios ");
+                    Console.Write("Que e debe hacer para mejorar: Tome los antibióticos exactamente según las indicaciones de su profesional de atención médica, no guarde los antibióticos para después. Hable con su profesional de atención médica sobre cómo desechar los antibióticos sobrantes de manera segura. ");
+                    Console.Write("Como prevenirla: Orinar después de la actividad sexual, mantenerse bien hidratado, ducharse en vez de tomar baños de tina. ");
+                }
+                else
+                {
+                    Console.WriteLine("El paciente tiene una patologia diferente o ingreso un nuemero fuera de rango ");
+                }
+                Console.WriteLine("******** Seleccionar sintomas que padece el paciente ********");
+                Console.WriteLine("9. Seleccionar otros sintomas");
+                Console.WriteLine("10. Salir");
+                Console.Write("Ingrese numero ");
+                menu = Convert.ToDouble(Console.ReadLine());
+                if (menu != 9 && menu != 10)
+                {
+                    Console.WriteLine("Valor invalido, volver a ingresar opcion");
+                    Console.WriteLine("******** Seleccionar sintomas que padece el paciente ********");
+                    Console.WriteLine("9. Seleccionar otros sintomas");
+                    Console.WriteLine("10. Salir");
+                    Console.Write("Ingresar valor ");
+                    menu = Convert.ToDouble(Console.ReadLine());
+
+                }
+            }
+        }
+    }
+}
